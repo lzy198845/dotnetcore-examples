@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net-core-serilog", "Serilog\asp.net-core-serilog.csproj", "{0D85B170-1C91-4B09-AAE8-4E31AA93912E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net-core-nlog", "Nlog\asp.net-core-nlog.csproj", "{AD4F402C-6C06-441F-8EF8-6BEE49979C2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D85B170-1C91-4B09-AAE8-4E31AA93912E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D85B170-1C91-4B09-AAE8-4E31AA93912E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D85B170-1C91-4B09-AAE8-4E31AA93912E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D85B170-1C91-4B09-AAE8-4E31AA93912E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4F402C-6C06-441F-8EF8-6BEE49979C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4F402C-6C06-441F-8EF8-6BEE49979C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4F402C-6C06-441F-8EF8-6BEE49979C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4F402C-6C06-441F-8EF8-6BEE49979C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76C85646-E703-4564-AD78-6AA2E3374864}
+	EndGlobalSection
+EndGlobal
