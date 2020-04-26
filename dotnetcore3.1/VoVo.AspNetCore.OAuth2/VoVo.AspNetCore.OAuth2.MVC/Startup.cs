@@ -35,7 +35,7 @@ namespace VoVo.AspNetCore.OAuth2.MVC
                     options.ClientId = "6daf87d8c206b823763a";
                     options.ClientSecret = "1d8cc4641f5f7b88bb3126605b8824e65077b2e3";
                 });
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

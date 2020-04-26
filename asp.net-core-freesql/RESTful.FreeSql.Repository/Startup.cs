@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RESTful.Web.Core.Domain;
-using Swashbuckle.AspNetCore.Swagger;
 using AutoMapper;
+using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+
 namespace RESTful.FreeSql.Repository
 {
     public class Startup
@@ -23,16 +25,8 @@ namespace RESTful.FreeSql.Repository
                 .UseAutoSyncStructure(true)
                 .Build();
 
-            //Fsql.CodeFirst.IsAutoSyncStructure = true;
+            Fsql.CodeFirst.IsAutoSyncStructure = true;
 
-            Fsql.Aop.CurdAfter = (s, e) =>
-            {
-                if (e.ElapsedMilliseconds > 200)
-                {
-                    //记录日志
-                    //发送短信给负责人
-                }
-            };
         }
 
         public IFreeSql Fsql { get; }
@@ -50,15 +44,15 @@ namespace RESTful.FreeSql.Repository
 
             services.AddAutoMapper(Assembly.Load("RESTful.Web.Core"));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info() { Title = "RESTful.FreeSql.Repository", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo() { Title = "RESTful.FreeSql.Repository", Version = "v1" });
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -81,7 +75,13 @@ namespace RESTful.FreeSql.Repository
             });
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

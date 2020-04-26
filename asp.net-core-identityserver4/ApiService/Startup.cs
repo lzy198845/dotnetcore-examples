@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
@@ -14,7 +15,7 @@ namespace ApiService
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IHostingEnvironment env)
+        public Startup(IConfiguration configuration, IWebHostEnvironment  env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
@@ -29,11 +30,10 @@ namespace ApiService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddControllersWithViews();
 
-            services.AddMvcCore()
-                .AddAuthorization()
-                .AddJsonFormatters();
+            services.AddControllers();
+            
 
             // IdentityServer
             services.AddAuthentication(Configuration["Identity:Scheme"])
@@ -70,7 +70,7 @@ namespace ApiService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment  env)
         {
             if (env.IsDevelopment())
             {
@@ -89,11 +89,16 @@ namespace ApiService
                 c.DocExpansion(DocExpansion.None);
             });
 
-
-            // authentication
             app.UseAuthentication();
             app.UseHttpsRedirection();
-            app.UseMvc();
+            
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

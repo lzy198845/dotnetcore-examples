@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20a8f6e5-1075-48c2-9f51-451ede1bcf79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/.idea.dotnetcore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.dotnetcore/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dotnetcore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-db/DataBase/DataBase.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-db/DataBase/DataBase.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-db/DataBase/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-db/DataBase/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/RESTful.FreeSql.Repository.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/RESTful.FreeSql.Repository.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.sln" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/RESTful.FreeSql.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/RESTful.FreeSql.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.Web.Core/RESTful.Web.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-freesql/RESTful.Web.Core/RESTful.Web.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-freesql/global.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-identityserver4/ApiService/ApiService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-identityserver4/ApiService/ApiService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-identityserver4/ApiService/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-identityserver4/ApiService/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/IdentityServer4.Service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/IdentityServer4.Service.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Properties/PublishProfiles/FolderProfile.pubxml" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Properties/PublishProfiles/FolderProfile.pubxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Qiniu.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Qiniu.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Swagger/Extentions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Swagger/HiddenApiFilter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Swagger/SwaggerFileHeaderParameter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asp.net-core-敏感词处理/StopWords/StopWords.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/asp.net-core-敏感词处理/StopWords/StopWords.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Basic.Csharp.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/Cap.FreeSql.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/FreeSqlDbConnectExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/Basic.Csharp/Cap.FreeSql/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-hello-world/console-hello-world.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/console-hello-world/console-hello-world.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-news-types/src/NewTypes/NewTypes.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/console-news-types/src/NewTypes/NewTypes.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-news-types/test/NewTypesTests/NewTypesTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/console-news-types/test/NewTypesTests/NewTypesTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-im/ImCore.Chat/ImCore.Chat.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-im/ImCore.Chat/ImCore.Chat.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-im/ImCore.Chat/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-im/ImCore.Chat/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-im/ImCore.Server/ImCore.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-im/ImCore.Server/ImCore.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-im/ImCore.Server/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-im/ImCore.Server/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Console.Example/CsRedis.ConSole_Example.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Console.Example/CsRedis.ConSole_Example.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Console.Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Console.Example/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Example/CsRedis.Example.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Example/CsRedis.Example.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Example/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-redis/CsRedis.Example/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-redis/StackExchange.Redis.Example/StackExchange.Redis.Example.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-redis/StackExchange.Redis.Example/StackExchange.Redis.Example.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-redis/StackExchange.Redis.Example/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-redis/StackExchange.Redis.Example/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-webapiclient/WeChat/WeChat.Mp/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-webapiclient/WeChat/WeChat.Mp/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-core-webapiclient/WeChat/WeChat.Mp/WeChat.Mp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-core-webapiclient/WeChat/WeChat.Mp/WeChat.Mp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.MVC/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.MVC/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.MVC/VoVo.AspNetCore.OAuth2.MVC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.MVC/VoVo.AspNetCore.OAuth2.MVC.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.WebAPI/VoVo.AspNetCore.OAuth2.WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.WebAPI/VoVo.AspNetCore.OAuth2.WebAPI.csproj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/dotnet-core-redis/CsRedis.Console.Example/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC3D22-AE2E-4842-9B17-2098CDDE1219/56/ff4f8a75/RedisHelper`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63CD6D84-69FC-43B5-8B19-1E6B19521F0F/e8/e53fac82/IHostingEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-identityserver4/ApiService/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/643F39BA-A69D-4929-8421-EAD0C6F95F28/3d/6c6835bc/IHostingEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.WebAPI/obj/Debug/netcoreapp3.1/VoVo.AspNetCore.OAuth2.WebAPI.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/InMemoryConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql.Repository/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnet-core-im/ImCore.Server/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnet-core-webapiclient/WeChat/WeChat.Mp/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.MVC/Controllers/AuthenticationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnet-core-redis/CsRedis.Example/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.MVC/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-freesql/RESTful.FreeSql/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-identityserver4/IdentityServer4/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-db/DataBase/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.WebAPI/LinConsts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnet-core-redis/StackExchange.Redis.Example/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-敏感词处理/StopWords/Utils/TcpClientHttpRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/console-hello-world/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.WebAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnet-core-im/ImCore.Chat/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dotnetcore3.1/VoVo.AspNetCore.OAuth2/VoVo.AspNetCore.OAuth2.WebAPI/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/asp.net-core-qiniu/Qiniu.Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

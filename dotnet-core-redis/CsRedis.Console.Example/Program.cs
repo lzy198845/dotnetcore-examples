@@ -65,7 +65,7 @@ namespace CsRedis.Console_Example
             bool isExistsKey = RedisHelper.Exists("new-key");
             Console.WriteLine($"exists key ,value：{isExistsKey}");
 
-            double incrByFloat=RedisHelper.IncrByFloat("key-float", 0.1);
+            Decimal incrByFloat=RedisHelper.IncrByFloat("key-float", (decimal) 0.1F);
             Console.WriteLine($"incrbyfloat key-float 0.1,value：{incrByFloat}");
 
         }

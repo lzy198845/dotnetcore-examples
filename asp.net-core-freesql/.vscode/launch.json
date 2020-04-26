@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Webapi.FreeSql/bin/Debug/netcoreapp2.2/Webapi.FreeSql.dll",
+            "program": "${workspaceFolder}/Webapi.FreeSql/bin/Debug/netcoreapp3.1/Webapi.FreeSql.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Webapi.FreeSql",
             "stopAtEntry": false,
