@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SerilogDemo;
 
 namespace Serilog.Controllers
 {
@@ -24,6 +25,7 @@ namespace Serilog.Controllers
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(SerilogActionFilter))]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -35,5 +37,14 @@ namespace Serilog.Controllers
             })
             .ToArray();
         }
+
+
+        [HttpGet("index")]
+        public IActionResult Index()
+        {
+            throw new Exception("异常测试，这是手动抛出的异常");
+            return Content("Index");
+        }
+
     }
 }

@@ -45,6 +45,7 @@ namespace Nlog
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
             });
         }
     }

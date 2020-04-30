@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
+using NlogDemo.Aop;
 
 namespace Nlog.Controllers
 {
@@ -23,6 +25,8 @@ namespace Nlog.Controllers
             _logger = logger;
         }
 
+
+        [TypeFilter(typeof(NlogActionFilter))]
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -35,5 +39,6 @@ namespace Nlog.Controllers
             })
             .ToArray();
         }
+
     }
 }
