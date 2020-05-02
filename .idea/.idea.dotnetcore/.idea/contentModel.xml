@@ -4,7 +4,7 @@
     <e p="C:\Users\Computer\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Computer\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_dotnetcore.2051498896.00" t="ExcludeRecursive" />
     <e p="D:\code\github\dotnetcore-examples" t="IncludeFlat">
-      <e p="asp.net-core-db\DataBase" t="IncludeRecursive">
+      <e p="aspnetcore-db\OvOv.DataBase" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -12,7 +12,6 @@
           <e p="PostController.cs" t="Include" />
           <e p="PostDapperController.cs" t="Include" />
         </e>
-        <e p="DataBase.csproj" t="IncludeRecursive" />
         <e p="db" t="Include">
           <e p="AppDb.cs" t="Include" />
         </e>
@@ -23,30 +22,30 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="DataBase.AssemblyInfo.cs" t="Include" />
+              <e p="OvOv.DataBase.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="OvOv.DataBase.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="wwwroot" t="Include" />
       </e>
-      <e p="asp.net-core-freesql\RESTful.FreeSql" t="IncludeRecursive">
+      <e p="aspnetcore-identityserver4\ApiService" t="IncludeRecursive">
+        <e p="ApiService.csproj" t="IncludeRecursive" />
+        <e p="ApiService.xml" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="BlogController.cs" t="Include" />
-          <e p="PostController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="RESTful.FreeSql.AssemblyInfo.cs" t="Include" />
+              <e p="ApiService.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -54,74 +53,81 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="RESTful.FreeSql.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
       </e>
-      <e p="asp.net-core-freesql\RESTful.FreeSql.Repository" t="IncludeRecursive">
+      <e p="aspnetcore-identityserver4\Identityserver4" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IdentityServer4.Service.csproj" t="IncludeRecursive" />
+        <e p="IdentityServer4.Service.xml" t="Include" />
+        <e p="InMemoryConfiguration.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="IdentityServer4.Service.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="tempkey.rsa" t="Include" />
+      </e>
+      <e p="aspnetcore-im\.dockerignore" t="Include" />
+      <e p="aspnetcore-im\OvOv.ImCore.Chat" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="BlogController.cs" t="Include" />
+          <e p="WebSocketController.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="RESTful.FreeSql.Repository.AssemblyInfo.cs" t="Include" />
+              <e p="OvOv.ImCore.Chat.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="OvOv.ImCore.Chat.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="Repositories" t="Include">
-          <e p="BlogRepository.cs" t="Include" />
-        </e>
-        <e p="RESTful.FreeSql.Repository.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="index.html" t="Include" />
+        </e>
       </e>
-      <e p="asp.net-core-freesql\RESTful.Web.Core" t="IncludeRecursive">
-        <e p="AutoMapper" t="Include">
-          <e p="BlogProfile.cs" t="Include" />
-          <e p="PostProfile.cs" t="Include" />
-        </e>
+      <e p="aspnetcore-im\OvOv.ImCore.Server" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Domain" t="Include">
-          <e p="Blog.cs" t="Include" />
-          <e p="ISoftDelete.cs" t="Include" />
-          <e p="Post.cs" t="Include" />
-        </e>
-        <e p="Extensions" t="Include">
-          <e p="CollectionsExtensions.cs" t="Include" />
-        </e>
-        <e p="Models" t="Include">
-          <e p="Blogs" t="Include">
-            <e p="CreateBlogDto.cs" t="Include" />
-            <e p="UpdateBlogDto.cs" t="Include" />
-          </e>
-          <e p="Posts" t="Include">
-            <e p="CreatePostDto.cs" t="Include" />
-            <e p="SearchPostDto.cs" t="Include" />
-          </e>
-        </e>
+        <e p="Controllers" t="Include" />
+        <e p="Dockerfile" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="RESTful.Web.Core.AssemblyInfo.cs" t="Include" />
+              <e p="OvOv.ImCore.Server.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
-        <e p="RESTful.Web.Core.csproj" t="IncludeRecursive" />
-        <e p="Web" t="Include">
-          <e p="PagedResultDto.cs" t="Include" />
-          <e p="PageDto.cs" t="Include" />
+        <e p="OvOv.ImCore.Server.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Startup.cs" t="Include" />
       </e>
-      <e p="asp.net-core-log\Nlog" t="IncludeRecursive">
+      <e p="aspnetcore-log\Nlog" t="IncludeRecursive">
+        <e p="Aop" t="Include">
+          <e p="NlogActionFilter.cs" t="Include" />
+        </e>
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
-        <e p="asp.net-core-nlog.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="WeatherForecastController.cs" t="Include" />
@@ -129,10 +135,11 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="asp.net-core-nlog.AssemblyInfo.cs" t="Include" />
+              <e p="OvOv.Nlog.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="OvOv.Nlog.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -140,21 +147,25 @@
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />
       </e>
-      <e p="asp.net-core-log\Serilog" t="IncludeRecursive">
+      <e p="aspnetcore-log\Serilog" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
-        <e p="asp.net-core-serilog.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
+        <e p="Filter" t="Include">
+          <e p="MvcGlobalExceptionFilter.cs" t="Include" />
+          <e p="SerilogActionFilter.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="asp.net-core-serilog.AssemblyInfo.cs" t="Include" />
+              <e p="OvOv.Serilog.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="OvOv.Serilog.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -162,8 +173,8 @@
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />
       </e>
-      <e p="asp.net-core-qiniu\.dockerignore" t="Include" />
-      <e p="asp.net-core-qiniu\Qiniu.Web" t="IncludeRecursive">
+      <e p="aspnetcore-qiniu\.dockerignore" t="Include" />
+      <e p="aspnetcore-qiniu\OvOv.Qiniu.Web" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -177,10 +188,11 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="Qiniu.Web.AssemblyInfo.cs" t="Include" />
+              <e p="OvOv.Qiniu.Web.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="OvOv.Qiniu.Web.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -189,39 +201,7 @@
           </e>
         </e>
         <e p="publish.bat" t="Include" />
-        <e p="Qiniu.Web.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
-      </e>
-      <e p="asp.net-core-敏感词处理\StopWords" t="IncludeRecursive">
-        <e p="_Illegal" t="Include">
-          <e p="IllegalInfo.txt" t="Include" />
-          <e p="IllegalKeywords.txt" t="Include" />
-          <e p="IllegalUrls.txt" t="Include" />
-        </e>
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="WordController.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="StopWords.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-        <e p="StopWords.csproj" t="IncludeRecursive" />
-        <e p="Utils" t="Include">
-          <e p="StopWords.cs" t="Include" />
-          <e p="TcpClientHttpRequest.cs" t="Include" />
-          <e p="ToolGoodUtils.cs" t="Include" />
-        </e>
       </e>
       <e p="console-hello-world" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -265,174 +245,11 @@
         <e p="PetTests.cs" t="Include" />
       </e>
       <e p="db" t="Include" />
-      <e p="dotnet-core-im\.dockerignore" t="Include" />
-      <e p="dotnet-core-im\ImCore.Chat" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="WebSocketController.cs" t="Include" />
-        </e>
-        <e p="Dockerfile" t="Include" />
-        <e p="ImCore.Chat.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="ImCore.Chat.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-        <e p="wwwroot" t="Include">
-          <e p="index.html" t="Include" />
-        </e>
-      </e>
-      <e p="dotnet-core-im\ImCore.Server" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include" />
-        <e p="Dockerfile" t="Include" />
-        <e p="ImCore.Server.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="ImCore.Server.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-      </e>
-      <e p="dotnet-core-redis\CsRedis.Console.Example" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="CsRedis.ConSole_Example.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CsRedis.ConSole_Example.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-      </e>
-      <e p="dotnet-core-redis\CsRedis.Example" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="ValuesController.cs" t="Include" />
-        </e>
-        <e p="CsRedis.Example.csproj" t="IncludeRecursive" />
-        <e p="Domain" t="Include">
-          <e p="UserInfo.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CsRedis.Example.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-      </e>
-      <e p="dotnet-core-redis\StackExchange.Redis.Example" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="ValuesController.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="StackExchange.Redis.Example.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="StackExchange.Redis.Example.csproj" t="IncludeRecursive" />
-        <e p="Startup.cs" t="Include" />
-      </e>
-      <e p="dotnet-core-webapiclient\WeChat\.dockerignore" t="Include" />
-      <e p="dotnet-core-webapiclient\WeChat\WeChat.Mp" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="ValuesController.cs" t="Include" />
-        </e>
-        <e p="Dockerfile" t="Include" />
-        <e p="IMyWebApi.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="WeChat.Mp.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="ResultMsg.cs" t="Include" />
-        <e p="Startup.cs" t="Include" />
-        <e p="WeChat.Mp.csproj" t="IncludeRecursive" />
-      </e>
       <e p="dotnetcore.sln" t="IncludeFlat" />
-      <e p="dotnetcore3.1\VoVo.AspNetCore.OAuth2\VoVo.AspNetCore.OAuth2.MVC" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="AuthenticationController.cs" t="Include" />
-          <e p="HomeController.cs" t="Include" />
-        </e>
-        <e p="Extensions" t="Include">
-          <e p="HttpContextExtensions.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="VoVo.AspNetCore.OAuth2.MVC.AssemblyInfo.cs" t="Include" />
-              <e p="VoVo.AspNetCore.OAuth2.MVC.RazorAssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-        <e p="Views" t="Include">
-          <e p="_ViewStart.cshtml" t="Include" />
-          <e p="Authentication" t="Include">
-            <e p="SignIn.cshtml" t="Include" />
-          </e>
-          <e p="Home" t="Include">
-            <e p="Index.cshtml" t="Include" />
-          </e>
-          <e p="Shared" t="Include">
-            <e p="_Layout.cshtml" t="Include" />
-          </e>
-        </e>
-        <e p="VoVo.AspNetCore.OAuth2.MVC.csproj" t="IncludeRecursive" />
-      </e>
+      <e p="Identityserver4" t="Include" />
+      <e p="imcore" t="Include" />
       <e p="log" t="Include" />
+      <e p="oatuh2" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="redis" t="Include" />
     </e>
