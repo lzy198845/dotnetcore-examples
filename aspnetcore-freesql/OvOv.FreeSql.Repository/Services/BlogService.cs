@@ -14,11 +14,11 @@ namespace OvOv.FreeSql.Repository.Services
 
     public class BlogService
     {
-        private readonly BlogRepository _blogRepository;
-        private readonly TagRepository _tagRepository;
+        private readonly IBlogRepository _blogRepository;
+        private readonly ITagRepository _tagRepository;
         private readonly IMapper _mapper;
 
-        public BlogService(BlogRepository blogRepository, TagRepository tagRepository, IMapper mapper)
+        public BlogService(IBlogRepository blogRepository, ITagRepository tagRepository, IMapper mapper)
         {
             _blogRepository = blogRepository ?? throw new ArgumentNullException(nameof(blogRepository));
             _tagRepository = tagRepository ?? throw new ArgumentNullException(nameof(tagRepository));

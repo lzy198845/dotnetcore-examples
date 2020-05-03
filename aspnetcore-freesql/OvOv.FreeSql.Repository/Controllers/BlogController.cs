@@ -15,10 +15,10 @@ namespace OvOv.FreeSql.Repository.Controllers
     [ApiController]
     public class BlogController : ControllerBase
     {
-        private readonly BlogRepository _blogRepository;
+        private readonly IBlogRepository _blogRepository;
         private readonly BlogService blogService;
 
-        public BlogController(BlogRepository blogRepository, BlogService blogService)
+        public BlogController(IBlogRepository blogRepository, BlogService blogService)
         {
             _blogRepository = blogRepository;
             this.blogService = blogService;

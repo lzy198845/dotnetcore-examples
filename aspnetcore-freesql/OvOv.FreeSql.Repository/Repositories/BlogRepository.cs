@@ -4,7 +4,7 @@ using OvOv.Core.Domain;
 
 namespace OvOv.FreeSql.Repository.Repositories
 {
-    public class BlogRepository : DefaultRepository<Blog,int>
+    public class BlogRepository : DefaultRepository<Blog,int>, IBlogRepository
     {
         public BlogRepository(UnitOfWorkManager uowm) : base(uowm?.Orm, uowm) 
         {

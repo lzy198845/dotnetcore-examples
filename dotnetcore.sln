@@ -59,6 +59,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "http", "http", "{77F2B469-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChat.Mp", "dotnetcore-webapiclient\WeChat\WeChat.Mp\WeChat.Mp.csproj", "{536E8F97-761F-4DD4-9844-C61B67A3A465}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OvOv.AutoFac", "aspnetcore-aop\OvOv.AutoFac\OvOv.AutoFac.csproj", "{2779756D-1405-4722-8860-2A93606DF5DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{536E8F97-761F-4DD4-9844-C61B67A3A465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536E8F97-761F-4DD4-9844-C61B67A3A465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536E8F97-761F-4DD4-9844-C61B67A3A465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2779756D-1405-4722-8860-2A93606DF5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2779756D-1405-4722-8860-2A93606DF5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2779756D-1405-4722-8860-2A93606DF5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2779756D-1405-4722-8860-2A93606DF5DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
