@@ -2,10 +2,11 @@
 
 namespace OvOv.Core.Domain
 {
-    public class Tag
+    public class Tag : IDeleteAduitEntity
     {
         [Column(IsIdentity = true, IsPrimary = true)]
         public int Id { get; set; }
         public string TagName { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

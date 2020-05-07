@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OvOv.FreeSql", "OvOv.FreeSq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OvOv.FreeSql.Repository", "OvOv.FreeSql.Repository\OvOv.FreeSql.Repository.csproj", "{C64021C8-89F9-4758-905E-32741ECBE20D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OvOv.FreeSql.AutoFac.DynamicProxy", "OvOv.FreeSql.AutoFac.DynamicProxy\OvOv.FreeSql.AutoFac.DynamicProxy.csproj", "{8E6C31D6-D442-4B45-BC2D-4B9960330E1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C64021C8-89F9-4758-905E-32741ECBE20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C64021C8-89F9-4758-905E-32741ECBE20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C64021C8-89F9-4758-905E-32741ECBE20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6C31D6-D442-4B45-BC2D-4B9960330E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6C31D6-D442-4B45-BC2D-4B9960330E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6C31D6-D442-4B45-BC2D-4B9960330E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6C31D6-D442-4B45-BC2D-4B9960330E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,15 @@
-{
+﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:46057",
+      "sslPort": 44369
+    }
+  },
   "profiles": {
-    "OvOv.FreeSql.Repository": {
+    "OvOv.FreeSql.AutoFac.DynamicProxy": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "",
