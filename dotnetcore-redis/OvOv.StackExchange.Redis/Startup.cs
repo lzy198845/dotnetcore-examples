@@ -26,6 +26,15 @@ namespace StackExchange.Redis.Example
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //将Redis分布式缓存服务添加到服务中
+            services.AddDistributedRedisCache(options =>
+            {
+                //用于连接Redis的配置  
+                options.Configuration = "localhost";// Configuration.GetConnectionString("RedisConnectionString");
+                                                    //Redis实例名RedisDistributedCache
+                options.InstanceName = "RedisDistributedCache";
+            });
+
             services.AddControllersWithViews();
         }
 

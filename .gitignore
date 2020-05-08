@@ -243,3 +243,4 @@ ModelManifest.xml
 upload/
 /Mock.Luo/UploadFile/
 /aspnetcore-敏感词处理/StopWords/_Illegal/IllegalBit.iws
+/dotnetcore-redis/.idea/.idea.dotnetcore-redis
