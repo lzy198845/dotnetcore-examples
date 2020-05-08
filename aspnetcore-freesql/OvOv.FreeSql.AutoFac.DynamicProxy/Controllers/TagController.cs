@@ -1,6 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OvOv.Core.Domain;
+using OvOv.Core.Web;
 using OvOv.FreeSql.AutoFac.DynamicProxy.Services;
 
 namespace OvOv.FreeSql.AutoFac.DynamicProxy.Controllers
@@ -16,16 +18,21 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Controllers
             _tagService = tagService;
         }
 
+        [HttpGet]
+        public Task<PagedResultDto<Tag>> GetAsync([FromQuery] PageDto pageDto)
+        {
+            return _tagService.GetAsync(pageDto);
+        }
         [HttpPut]
         public async Task UpdateAsync([FromBody] Tag tag)
         {
-           await _tagService.UpdateAsync(tag);
+            await _tagService.UpdateAsync(tag);
         }
-        
+
         [HttpPost]
         public async Task CreateAsync([FromBody] Tag tag)
         {
-          await _tagService.CreateAsync(tag);
+            await _tagService.CreateAsync(tag);
         }
     }
 

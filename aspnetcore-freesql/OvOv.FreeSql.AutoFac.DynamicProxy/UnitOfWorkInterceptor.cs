@@ -114,6 +114,7 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
             }
             finally
             {
+                _logger.LogInformation($"事务Dispose...");
                 _unitOfWork.Dispose();
             }
         }

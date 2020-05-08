@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using OvOv.Core.Domain;
+using OvOv.Core.Web;
 using OvOv.FreeSql.AutoFac.DynamicProxy.Repositories;
 
 namespace OvOv.FreeSql.AutoFac.DynamicProxy.Services
@@ -17,6 +19,14 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Services
             _mapper = mapper;
         }
 
+        [Transactional]
+        public virtual async Task<PagedResultDto<Tag>> GetAsync(PageDto pageDto)
+        {
+            List<Tag> tags = await _tagRepository.Select.OrderBy(r => r.Id).Count(out long totalCount).Page(pageDto.PageNumber, pageDto.PageSize).ToListAsync();
+
+            return new PagedResultDto<Tag>(totalCount, tags);
+
+        }
         [Transactional]
         public virtual async Task UpdateAsync(Tag tag)
         {
@@ -49,10 +59,10 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Services
 
             await _tagRepository.InsertAsync(
                 new Tag()
-            {
-                TagName = "a",
-                IsDeleted = false
-            }
+                {
+                    TagName = "a",
+                    IsDeleted = false
+                }
             );
             if (tag.TagName == "abc")
             {
