@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OvOv.Core.Domain;
 using OvOv.Core.Models.Blogs;
+using OvOv.Core.Web;
 using OvOv.FreeSql.AutoFac.DynamicProxy.Repositories;
 using OvOv.FreeSql.AutoFac.DynamicProxy.Services;
 
@@ -14,11 +15,13 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Controllers
     {
         private readonly IBlogRepository _blogRepository;
         private readonly BlogService _blogService;
+        private readonly TagService tagService;
 
-        public BlogController(IBlogRepository blogRepository, BlogService blogService)
+        public BlogController(IBlogRepository blogRepository, BlogService blogService, TagService tagService)
         {
             _blogRepository = blogRepository;
             this._blogService = blogService;
+            this.tagService = tagService;
         }
 
         [HttpGet]
@@ -60,6 +63,22 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Controllers
         public async Task Delete(int id)
         {
             await _blogRepository.DeleteAsync(r => r.Id == id);
+        }
+
+
+
+        [HttpGet("blog-tag")]
+        public async Task<List<Blog>> GetBlogTagAsync()
+        {
+            return await _blogService.GetBlogs();
+        }
+
+
+        [HttpGet("blog-tag-test")]
+        public string GetBlogTest()
+        {
+            _blogService.GetBlogs();
+            return "ok";
         }
     }
 

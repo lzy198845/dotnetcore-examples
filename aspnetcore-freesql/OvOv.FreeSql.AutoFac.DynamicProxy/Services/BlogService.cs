@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using OvOv.Core.Domain;
 using OvOv.Core.Models.Blogs;
+using OvOv.Core.Web;
 using OvOv.FreeSql.AutoFac.DynamicProxy.Repositories;
 
 namespace OvOv.FreeSql.AutoFac.DynamicProxy.Services
@@ -14,14 +15,30 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Services
         private readonly IBlogRepository _blogRepository;
         private readonly ITagRepository _tagRepository;
         private readonly IMapper _mapper;
+        private readonly TagService tagService;
 
-        public BlogService(IBlogRepository blogRepository, ITagRepository tagRepository, IMapper mapper)
+        public BlogService(IBlogRepository blogRepository, ITagRepository tagRepository, IMapper mapper, TagService tagService)
         {
             _blogRepository = blogRepository ?? throw new ArgumentNullException(nameof(blogRepository));
             _tagRepository = tagRepository ?? throw new ArgumentNullException(nameof(tagRepository));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            this.tagService = tagService;
         }
 
+        [Transactional]
+        public virtual async Task<List<Blog>> GetBlogs()
+        {
+            var ids =  tagService.GetArticleIds();
+            //var ids =  tagService.GetArticleIdsAsync();
+            await tagService.CreateAsync(new Tag(){TagName = "fff",IsDeleted = false});
+            var tags = await tagService.GetAsync(new PageDto());
+
+            var blogs = await _blogRepository.Select
+                            .Include(r => r.Classify)
+                            .IncludeMany(r => r.UserLikes, r => r.Where(u => u.Status))
+                            .OrderByDescending(r => r.Id).Count(out long count).ToListAsync();
+            return blogs;
+        }
 
         public void CreateBlog(CreateBlogDto createBlogDto)
         {

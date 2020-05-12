@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using FreeSql;
 using OvOv.Core.Domain;
 using OvOv.Core.Web;
 using OvOv.FreeSql.AutoFac.DynamicProxy.Repositories;
@@ -10,19 +11,40 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy.Services
 {
     public class TagService
     {
-        private readonly ITagRepository _tagRepository;
+        private readonly IBaseRepository<Tag> _tagRepository;
         private readonly IMapper _mapper;
+        private readonly IBaseRepository<UserLike> _userLikeRepository;
 
-        public TagService(ITagRepository tagRepository, IMapper mapper)
+        public TagService(IBaseRepository<Tag> tagRepository, IMapper mapper, IBaseRepository<UserLike> userLikeRepository)
         {
             _tagRepository = tagRepository;
             _mapper = mapper;
+            _userLikeRepository = userLikeRepository;
+        }
+        [Transactional]
+        public virtual  List<int> GetArticleIds()
+        {
+            List<int> ids =  _userLikeRepository.Select
+                .ToList(r => r.ArticleId);
+            return ids;
         }
 
         [Transactional]
+        public virtual async Task<List<int>> GetArticleIdsAsync()
+        {
+            List<int> ids = await _userLikeRepository.Select
+                .ToListAsync(r=>r.ArticleId);
+
+            return ids;
+
+        }
+        [Transactional]
         public virtual async Task<PagedResultDto<Tag>> GetAsync(PageDto pageDto)
         {
-            List<Tag> tags = await _tagRepository.Select.OrderBy(r => r.Id).Count(out long totalCount).Page(pageDto.PageNumber, pageDto.PageSize).ToListAsync();
+            List<Tag> tags = await _tagRepository.Select
+                .OrderBy(r => r.Id).Count(out long totalCount)
+                .Page(pageDto.PageNumber, pageDto.PageSize)
+                .ToListAsync();
 
             return new PagedResultDto<Tag>(totalCount, tags);
 

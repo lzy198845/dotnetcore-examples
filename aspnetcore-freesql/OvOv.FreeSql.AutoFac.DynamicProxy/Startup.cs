@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -23,7 +24,6 @@ using OvOv.FreeSql.AutoFac.DynamicProxy.Services;
 
 namespace OvOv.FreeSql.AutoFac.DynamicProxy
 {
-
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -45,17 +45,18 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
 
             Fsql.Aop.CurdAfter += (s, e) =>
             {
-                Trace.WriteLine($"ManagedThreadId:{Thread.CurrentThread.ManagedThreadId}: FullName:{e.EntityType.FullName}" +
-                          $" ElapsedMilliseconds:{e.ElapsedMilliseconds}ms, {e.Sql}");
+                Trace.WriteLine(
+                    $"ManagedThreadId:{Thread.CurrentThread.ManagedThreadId}: FullName:{e.EntityType.FullName}" +
+                    $" ElapsedMilliseconds:{e.ElapsedMilliseconds}ms, {e.Sql}");
 
                 if (e.ElapsedMilliseconds > 200)
                 {
-                    //记录日志
-                    //发送短信给负责人
                 }
             };
 
+            //   DbConnection dbConnection= Fsql.Ado.MasterPool.Get().Value;
         }
+
         public IFreeSql Fsql { get; }
         public IConfiguration Configuration { get; }
 
@@ -63,8 +64,6 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-
             services.AddSingleton(Fsql);
             services.AddScoped<UnitOfWorkManager>();
             this.AddFreeRepository(services);
@@ -79,7 +78,7 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
             services.AddAutoMapper(Assembly.Load("OvOv.Core"));
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo() { Title = "OvOv.FreeSql.Autofac.DynamicProxy", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo() {Title = "OvOv.FreeSql.Autofac.DynamicProxy", Version = "v1"});
             });
         }
 
@@ -107,6 +106,7 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
             {
                 app.UseHsts();
             }
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
@@ -124,5 +124,4 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
             });
         }
     }
-
 }
