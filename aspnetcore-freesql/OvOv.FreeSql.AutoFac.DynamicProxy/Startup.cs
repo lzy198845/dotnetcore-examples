@@ -11,6 +11,7 @@ using Autofac.Core.Registration;
 using AutoMapper;
 using FreeSql;
 using FreeSql.Internal;
+using FreeSql.Internal.ObjectPool;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -54,7 +55,10 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
                 }
             };
 
-            //   DbConnection dbConnection= Fsql.Ado.MasterPool.Get().Value;
+            using Object<DbConnection> objPool = Fsql.Ado.MasterPool.Get();
+
+            DbConnection dbConnection = objPool.Value;
+
         }
 
         public IFreeSql Fsql { get; }
@@ -78,7 +82,7 @@ namespace OvOv.FreeSql.AutoFac.DynamicProxy
             services.AddAutoMapper(Assembly.Load("OvOv.Core"));
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo() {Title = "OvOv.FreeSql.Autofac.DynamicProxy", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo() { Title = "OvOv.FreeSql.Autofac.DynamicProxy", Version = "v1" });
             });
         }
 

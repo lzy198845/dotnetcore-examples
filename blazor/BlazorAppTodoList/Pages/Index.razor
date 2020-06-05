@@ -1,0 +1,66 @@
+﻿@page "/"
+
+<main class="dowebok" id="todolist">
+    <h1>待办事项<span>一次只做一件事</span></h1>
+    <p class="emptylist">没有待办事项！</p>
+
+    <div>
+        <label>
+            <span class="togglebutton-label">@Lable</span>
+            <span class="tooglebutton-box"></span>
+        </label>
+        <input type="checkbox" name=@Name id="@Name" value="@isactive" @onchange="CheckboxChanged">
+    </div>
+
+    <form name="newform">
+        <label for="newitem">添加待办事项</label>
+        <input type="text" name="newitem" id="newitem" @bind-value="to.Title">
+        <button type="button" @onclick="AddTodo">添加</button>
+    </form>
+</main>
+
+@code {
+
+    public class TodoItem
+    {
+        public string Title { get; set; }
+        public bool IsDone { get; set; }
+    }
+    private IList<TodoItem> todos = new List<TodoItem>();
+
+    private TodoItem to = new TodoItem()
+    {
+
+    };
+
+    private string visibility = "all";
+    private string Lable = "完成的移动到底部";
+    private string Name = "todosort";
+
+    private bool isactive = false;
+    private bool sortByStatus = false;
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(to.Title))
+        {
+            System.Diagnostics.Debug.WriteLine(to.Title);
+            todos.Add(new TodoItem { Title = to.Title });
+            to.Title = string.Empty;
+        }
+    }
+
+    private void EditorTodo(TodoItem item)
+    {
+        this.to = item;
+    }
+
+    private void CheckboxChanged()
+    {
+        System.Diagnostics.Debug.WriteLine("debugger");
+        this.isactive = !this.isactive;
+        this.sortByStatus = this.isactive;
+    }
+
+}
+

@@ -43,11 +43,11 @@ namespace DataBase.Model
                 var cmd = Db.Connection.CreateCommand();
                 cmd.CommandText = @"DELETE FROM `Post`";
                 await cmd.ExecuteNonQueryAsync();
-                txn.Commit();
+                await txn.CommitAsync();
             }
             catch
             {
-                txn.Rollback();
+                await txn.RollbackAsync();
                 throw;
             }
         }

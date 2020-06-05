@@ -15,7 +15,10 @@ namespace DataBase.Db
         }
         public void Dispose()
         {
-            Connection.Close();
+            if (Connection != null && Connection.State != System.Data.ConnectionState.Closed)
+            {
+                Connection.Close();
+            }
         }
     }
 }

@@ -19,7 +19,6 @@ namespace DataBase.Controllers
             _db = db;
         }
 
-        // GET api/async
         [HttpGet]
         public async Task<IActionResult> GetLatest()
         {
@@ -28,7 +27,7 @@ namespace DataBase.Controllers
                 return new OkObjectResult("");
             }
         }
-        // GET api/async/5
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOne(int id)
         {
@@ -48,5 +47,41 @@ namespace DataBase.Controllers
                 return new OkObjectResult(post);
             }
         }
+
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody]Post post)
+        {
+            using (_db)
+            {
+                await _db.Connection.OpenAsync();
+                string sql = "UPDATE  Post SET Title=@Title,Content=@Content WHERE Id=@Id";
+                _db.Connection.Execute(sql, post);
+                return new OkObjectResult("");
+            }
+
+        }
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            using (_db)
+            {
+                await _db.Connection.OpenAsync();
+                _db.Connection.Execute(@"DELETE FROM  `Post` WHERE id=@id", new { id });
+                return new OkObjectResult("");
+            }
+        }
+
+        [HttpPost("create-list")]
+        public async Task<IActionResult> PostList([FromBody]List<Post> posts)
+        {
+            using (_db)
+            {
+                await _db.Connection.OpenAsync();
+                _db.Connection.Execute(@"INSERT INTO `Post` (`Title`, `Content`) VALUES (@title, @content);", posts);
+                return new OkObjectResult(posts);
+            }
+        }
+
+
     }
 }

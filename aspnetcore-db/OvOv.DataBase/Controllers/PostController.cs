@@ -19,7 +19,7 @@ namespace DataBase.Controllers
             _db = db;
         }
 
-        // GET api/async
+        // GET api/post
         [HttpGet]
         public async Task<IActionResult> LatestPostsAsync()
         {
@@ -31,6 +31,7 @@ namespace DataBase.Controllers
                 return new OkObjectResult(result);
             }
         }
+
         // GET api/post/5
         [HttpGet("{id}")]
         public async Task<IActionResult> FindOneAsync(int id)
