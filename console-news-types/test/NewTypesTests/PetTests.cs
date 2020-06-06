@@ -21,4 +21,12 @@ public class PetTests
 
         Assert.Equal(expected, actual);
     }
+
+    [Fact]
+    public void TestTyepof()
+    {
+
+        Type typeofDog = typeof(Dog);
+
+    }
 }
