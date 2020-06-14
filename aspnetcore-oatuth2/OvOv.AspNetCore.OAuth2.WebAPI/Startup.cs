@@ -31,9 +31,7 @@ namespace VoVo.AspNetCore.OAuth2.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
             services.AddJwtConfiguration(Configuration);
 
             services.AddCors();

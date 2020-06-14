@@ -1,5 +1,9 @@
 <template>
-  <div class="main">Login-Result</div>
+  <div class="main">
+    <h2>Login-Result</h2>
+    <p>OpenId:{{OpenId1}}</p>
+    <p>GetOpenIdByToken{{OpenId2}}</p>
+  </div>
 </template>
 
 <script>
@@ -19,13 +23,19 @@ function parseUrlParams() {
 export default {
   name: "LoginResult",
   props: {},
+  data() {
+    return {
+      OpenId1: "",
+      OpenId2: ""
+    };
+  },
   created() {
     var result = parseUrlParams();
     if (!(result && result.token)) {
       alert("无效的登录");
       return;
     }
-
+    var that = this;
     axios({
       methods: "get",
       url: "https://localhost:5001/OpenId?provider=GitHub",
@@ -34,6 +44,7 @@ export default {
       }
     }).then(function(response) {
       console.log(response);
+      that.OpenId1 = response.data;
     });
 
     axios({
@@ -44,6 +55,7 @@ export default {
       }
     }).then(function(response) {
       console.log(response);
+      that.OpenId2 = response.data;
     });
   }
 };

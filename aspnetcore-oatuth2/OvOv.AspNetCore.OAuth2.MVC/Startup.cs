@@ -32,8 +32,8 @@ namespace VoVo.AspNetCore.OAuth2.MVC
                 })
                 .AddGitHub(options =>
                 {
-                    options.ClientId = "6daf87d8c206b823763a";
-                    options.ClientSecret = "1d8cc4641f5f7b88bb3126605b8824e65077b2e3";
+                    options.ClientId = "0be6b05fc717bfc4fb67";
+                    options.ClientSecret = "dcaced9f176afba64e89d88b9b06ffc4a887a609";
                 });
             services.AddControllersWithViews();
         }

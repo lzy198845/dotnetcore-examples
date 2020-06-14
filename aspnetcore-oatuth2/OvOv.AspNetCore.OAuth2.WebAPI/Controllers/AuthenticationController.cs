@@ -82,12 +82,10 @@ namespace VoVo.AspNetCore.OAuth2.WebAPI.Controllers
             }
 
             var request = _contextAccessor.HttpContext.Request;
-            var url =
-                $"{request.Scheme}://{request.Host}{request.PathBase}{request.Path}-callback?provider={provider}&redirectUrl={redirectUrl}";
+            var url = $"{request.Scheme}://{request.Host}{request.PathBase}{request.Path}-callback?provider={provider}&redirectUrl={redirectUrl}";
             var properties = new AuthenticationProperties { RedirectUri = url };
             properties.Items[LoginProviderKey] = provider;
             return Challenge(properties, provider);
-
         }
 
         //https://localhost:5001/signout
@@ -97,12 +95,11 @@ namespace VoVo.AspNetCore.OAuth2.WebAPI.Controllers
             // Instruct the cookies middleware to delete the local cookie created
             // when the user agent is redirected from the external identity provider
             // after a successful authentication flow (e.g Google or Facebook).
-            return SignOut(new AuthenticationProperties { RedirectUri = "/" },
-                CookieAuthenticationDefaults.AuthenticationScheme);
+            return SignOut(new AuthenticationProperties { RedirectUri = "/" },CookieAuthenticationDefaults.AuthenticationScheme);
         }
 
         /// <summary>
-        /// axios https://localhost:5001/OpenId 得到null，浏览器直接打开能得到github的id 
+        /// axios https://localhost:5001/OpenId?provider=GitHub 得到null，浏览器直接打开这个地址能得到github的id 
         /// </summary>
         /// <param name="provider"></param>
         /// <returns></returns>
@@ -124,7 +121,6 @@ namespace VoVo.AspNetCore.OAuth2.WebAPI.Controllers
 
         private string CreateToken(ClaimsPrincipal claimsPrincipal)
         {
-
             var handler = new JwtSecurityTokenHandler();
             var key = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(_configuration["Authentication:JwtBearer:SecurityKey"]));

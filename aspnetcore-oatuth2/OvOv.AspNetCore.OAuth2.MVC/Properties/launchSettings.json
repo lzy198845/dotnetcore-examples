@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "VoVo.AspNetCore.OAuth2.GitHub": {
+    "OvOv.AspNetCore.OAuth2.MVC": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "",
