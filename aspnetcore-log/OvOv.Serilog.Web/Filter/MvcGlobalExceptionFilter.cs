@@ -14,9 +14,6 @@ namespace OvOv.Serilog.Filter
 
         public void OnException(ExceptionContext context)
         {
-            // 全局异常的错误处理
-            _logger.LogInformation("test");
-            _logger.LogError(context.Exception, "全局异常");
         }
     }
 }

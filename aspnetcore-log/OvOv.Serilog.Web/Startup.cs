@@ -3,7 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
+using OvOv.Serilog.Filter;
 using Serilog;
+using Serilog.Events;
 
 namespace OvOv.Serilog
 {
@@ -19,7 +22,11 @@ namespace OvOv.Serilog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(options =>
+            {
+                options.Filters.Add<SerilogActionFilter>();
+                options.Filters.Add<MvcGlobalExceptionFilter>();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,7 +37,21 @@ namespace OvOv.Serilog
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseSerilogRequestLogging();
+            app.UseSerilogRequestLogging(options =>
+            {
+                // Customize the message template
+                // options.MessageTemplate = "Handled {RequestPath}";
+                //
+                // // Emit debug-level events instead of the defaults
+                // options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+    
+                // Attach additional properties to the request completion event
+                options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                {
+                    diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+                    diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                };
+            });
 
             app.UseHttpsRedirection();
 

@@ -18,8 +18,11 @@ namespace OvOv.Serilog
                        .Enrich.FromLogContext()
                        .WriteTo.Console()
                        .WriteTo.Debug(new RenderedCompactJsonFormatter())
+                       .WriteTo.MySQL("server=127.0.0.1;uid=root;pwd=123456;database=logging_database;")
                        .CreateLogger();
 
+            Log.Information("This informational message will be written to MySQL database");
+            
             try
             {
                 Log.Information("Starting web host");

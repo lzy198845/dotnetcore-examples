@@ -7,19 +7,23 @@ namespace OvOv.Serilog.Filter
     public class SerilogActionFilter : Attribute, IActionFilter
     {
         private readonly ILogger _logger;
+        private  string path;
 
         public SerilogActionFilter(ILoggerFactory logger)
         {
             _logger = logger.CreateLogger("SerilogActionFilter");
         }
-
+    
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            var path = context.HttpContext.Request.Path;
-            _logger.LogDebug($"{path} 开始运行了");
+             path = context.HttpContext.Request.Path;
+            _logger.LogDebug("{path} OnActionExecuted",path);
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
-        { }
+        {
+             path = context.HttpContext.Request.Path;
+            _logger.LogDebug("{path} OnActionExecuting",path);
+        }
     }
 }
