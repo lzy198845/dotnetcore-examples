@@ -14,11 +14,14 @@
 		<PackageReference Include="FreeSql.Provider.MySql" Version="1.4.0" />
 		<PackageReference Include="FreeSql.DbContext" Version="1.4.0" />
 		<PackageReference Include="FreeSql.Provider.Sqlite" Version="1.4.0" />
+		<PackageReference Include="FreeSql.Provider.SqlServer" Version="1.4.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.3" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\OvOv.Core\OvOv.Core.csproj" />
 	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="http://json.schemastore.org/jovo-language-model" /></VisualStudio></ProjectExtensions>
 
 </Project>

@@ -20,13 +20,25 @@ namespace OvOv.FreeSql.Repository
         {
             Configuration = configuration;
 
-            IConfigurationSection configurationSection = Configuration.GetSection("Default");
-
-            Fsql = new FreeSqlBuilder()
-                .UseConnectionString(DataType.MySql, configurationSection.Value)
-                .UseAutoSyncStructure(true)
-                .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
-                .Build();
+            string connectkey = Configuration.GetSection("ConnectString").Value;
+            if (connectkey=="Mysql")
+            {
+                IConfigurationSection Mysql = Configuration.GetSection("Mysql");
+                Fsql = new FreeSqlBuilder()
+                    .UseConnectionString(DataType.MySql, Mysql.Value)
+                    .UseAutoSyncStructure(true)
+                    .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
+                    .Build();
+            }
+            else
+            {
+                IConfigurationSection MssqlConfiguration = Configuration.GetSection("MssqlServer");
+                Fsql = new FreeSqlBuilder()
+                                   .UseConnectionString(DataType.SqlServer, MssqlConfiguration.Value)
+                                   .UseAutoSyncStructure(true)
+                                   .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
+                                   .Build();
+            }
 
             Fsql.CodeFirst.IsAutoSyncStructure = true;
         }
